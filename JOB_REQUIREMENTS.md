@@ -6,20 +6,23 @@
 
 > Human-readable summary of [`.aicg/job-requirements.json`](./.aicg/job-requirements.json). The JSON is the source of truth; this document mirrors it in table form for reviewers, hiring managers, and learners deciding whether the curriculum fits their real role.
 
-## Status — 2026-09 cycle sampled 39 live postings
+## Status — 2026-10 cycle merged 40 postings (26 carried forward + 14 fresh)
 
-Sampled 39 real postings in the 2026-06-05 → 2026-09-03 window (last 90 days).
+Merged corpus of 40 real postings in the 2026-07-05 → 2026-10-03 window (last 90 days). The cycle is a continuity top-up: 26 postings from the 2026-09 cycle still sit inside the current 90-day window and are carried forward; 14 fresh postings were sampled 2026-09-04 → 2026-10-03 to clear the ≥25 bar and probe for theme drift. 13 postings aged out of window (post-11, 12, 14, 15, 22, 23, 24, 27, 28, 29, 30, 31, 34) and are archived in [`.aicg/research/runs/cto-2026-09/postings.raw.json`](./.aicg/research/runs/cto-2026-09/postings.raw.json).
+
 Distribution:
 
-- **Sources**: Wellfound 18, ycombinator.com company pages 10, Welcome to the Jungle / Otta 9, Techstars 2.
-- **Titles**: Technical Co-Founder / Founding CTO variants 15, Founding Engineer / Founding AI Engineer variants 22, Head of Engineering (startup) 2, VP Engineering (startup) 0.
-- **Stage**: pre-seed 23, seed 14, series-a 2.
-- **AI-native mix**: true 26, false 13 (~67% AI-native, mirroring current YC batch composition).
-- **Geo**: US-remote, EU (Berlin, Paris, Amsterdam, London), India (Hyderabad, Pune), Africa (Lagos, Nairobi), Australia. GBP@1.30 and EUR@1.10 conversion applied.
-- **Sources attempted but gated**: workatastartup.com 403'd headless fetches (represented via canonical ycombinator.com company job permalinks), WorkInStartups.com detail gated by auth, LinkedIn returned auth-walled search shells (postings excluded because verbatim requirement phrases could not be lifted). No fabricated data.
+- **Sources**: Wellfound 24, ycombinator.com company pages 11, Welcome to the Jungle / Otta 7, Techstars 2.
+- **Titles**: Technical Co-Founder / Founding CTO variants 25, Founding Engineer / Founding AI Engineer variants 13, Head of Engineering (startup) 2, VP Engineering (startup) 0.
+- **Stage**: pre-seed 25, seed 15, series-a 0 (both 2026-09 Series-A postings aged out and no new Series-A postings were sampled — next cycle should re-prioritise Series-A sourcing).
+- **AI-native mix**: true 29, false 11 (~73% AI-native, up ~6pp from 2026-09).
+- **Geo**: US (SF, NY, Boston, Chicago, LA, Philadelphia, Palo Alto, Toronto), EU (Berlin, Paris, Amsterdam, London, Cologne, Düsseldorf, Aachen), MENA (Doha), India (Hyderabad, Pune), Africa (Lagos, Nairobi), Australia (Sydney). GBP@1.30 and EUR@1.10 conversion applied.
+- **Sources attempted but gated**: workatastartup.com continues to 403 headless fetches (represented via canonical ycombinator.com company job permalinks), jobs.techstars.com Ada IQ founding-CTO detail 404'd on fetch, Welcome to the Jungle EU founding-engineer listings in the Sept-Oct window were mostly already closed/expired, WorkInStartups.com detail gated by auth, LinkedIn returned auth-walled search shells. No fabricated data.
 - **Exclusions applied**: fractional / interim CTO postings and post-Series-B / growth-stage / public-company CTO postings, per the ownership rule.
 
-**Delta this cycle**: no net-new curriculum modules, exercises, or projects. Every theme crossing the ≥0.30 net-new-content threshold already has an owner. See [`.aicg/curriculum-plan-delta.json`](./.aicg/curriculum-plan-delta.json) for the empty-additions rationale, [`.aicg/job-requirements.json`](./.aicg/job-requirements.json) for the per-theme evidence, and [`.aicg/research/runs/cto-2026-09/`](./.aicg/research/runs/cto-2026-09/) for the raw sample and per-theme working set.
+**Tagging-consistency caveat**: the 2026-10 top-up sub-agent tagged T01 (CTO role framing), T26 (founder identity), and T28 (0-to-1 shipping velocity) more aggressively than the 2026-09 sub-agent — T01 lifted 0.26 → 0.48, T26 lifted 0.20 → 0.43, T28 lifted 0.26 → 0.43 on the merged sample. Reading the verbatim quotes, part of the lift is real (Sept-Oct 2026 pre-seed listings do carry heavier 'genuine co-founder' and 'ship in weeks' framing than June 2026 listings) and part is tagger-criterion drift (the top-up tagged any pre-seed 4-year-vest / 1-year-cliff posting with T26, whereas 2026-09 required explicit 'not CTO-in-name' language). Under a tagging-strict reading, T26 and T28 would sit at ~0.20-0.25, still below the ≥0.30 threshold. Either reading, **every ≥0.30 theme already has an owner** — this cycle's lift signals existing-coverage reinforcement, not a net-new content need.
+
+**Delta this cycle**: no net-new curriculum modules, exercises, or projects. All ≥0.30 themes already have an owner. See [`.aicg/curriculum-plan-delta.json`](./.aicg/curriculum-plan-delta.json) for the empty-additions rationale, [`.aicg/job-requirements.json`](./.aicg/job-requirements.json) for the per-theme evidence, [`.aicg/research/runs/cto-2026-10/postings.compact.json`](./.aicg/research/runs/cto-2026-10/postings.compact.json) for the Sept-Oct top-up sample, and [`.aicg/research/runs/cto-2026-09/`](./.aicg/research/runs/cto-2026-09/) for the carried-forward 2026-09 raw sample.
 
 ## Ownership rule
 
@@ -54,51 +57,53 @@ Coverage abbreviations:
 - **prereq** — assumed prerequisite (documented in [`PREREQUISITES.md`](./PREREQUISITES.md))
 - **up** — deferred up to a higher-level track
 
-Frequency is `posting_count / 39`. The ≥0.30 net-new-content threshold requires ≥12 postings.
+Frequency is `posting_count / 40`. The ≥0.30 net-new-content threshold requires ≥12 postings.
 
-| # | Theme | Owner | Coverage | Frequency (n=39) |
-|---|---|---|---|---|
-| 01 | CTO role position on the ladder, stage-by-stage self-development plan | `cto` | mod-101 | 0.26 (9) |
-| 02 | Architecture under uncertainty — ADRs, C4, monolith-first, evolutionary architecture, ISO/IEC 25010 trade-offs | `cto` | mod-102 | **0.51 (18)** ✓ |
-| 03 | Build-vs-buy and platform choices — cloud economics, vendor selection, AI-stack decisions | `cto` | mod-103 | 0.23 (8) |
-| 04 | First engineering hires and team topology — hiring plan, interview loop, Team Topologies patterns | `cto` | mod-104 | **0.37 (13)** ✓ |
-| 05 | Technical debt as a business decision — portfolio, cost-to-carry, refactor budget, deprecation vs. StranglerFig rewrite | `cto` | mod-105 | 0.06 (2)† |
-| 06 | Scaling the org and the stack — 0 → 5 → 15 → 50 → 150 engineers transitions | `cto` | mod-106 | 0.20 (7) |
-| 07 | Founder-scope security and compliance — SOC 2 Type I, GDPR / CCPA, HIPAA baseline, OWASP ASVS, SLSA, vendor DPA / BAA | `cto` | mod-107 | 0.17 (6) |
-| 08 | CTO↔CEO relationship, board technical communication, technical due diligence | `cto` | mod-108 | 0.14 (5) |
-| 09 | Python / TypeScript / cloud fluency at technical-co-founder depth | `ai-infra-junior-engineer` / `ai-infra-engineer` | prereq | **0.46 (16)** ✓ |
-| 10 | Product discovery, roadmap, delivery-cadence fluency | `cpo-curriculum` | peer | **0.34 (12)** ✓ |
-| 11 | CEO strategy, fundraising cadence, cap-table literacy | `founder-ceo-curriculum` | peer | 0.09 (3) |
-| 12 | HR / people-ops / compensation / performance-management basics | `startup-operations-governance-curriculum` | peer | 0.20 (7) |
-| 13 | Finance / runway / unit-economics basics | `startup-finance-fundraising-curriculum` | peer | 0.00 (0)‡ |
-| 14 | GTM / enterprise-sales-motion basics | `startup-product-gtm-curriculum` | peer | 0.14 (5) |
-| 15 | Delivery cadence, DORA four-key signals, blameless post-mortems | `cto` | mod-106 (slice) | 0.11 (4) |
-| 16 | Day-two engineering-management craft (1:1s, career ladders, performance-management) | `ai-infra-team-lead` | peer | 0.14 (5) |
-| 17 | Deep platform, distributed-systems, multi-region architecture beyond ~50 engineers | `ai-infra-senior-architect` / `ai-infra-principal-architect` | up | 0.11 (4) |
-| 18 | AI-native platform decisions — foundation-model API vs. self-host, RAG / fine-tune / tool-use, inference cost economics | `cto` | mod-103 (AI-native slice) | **0.57 (20)** ✓ |
-| 19 | Hands-on shipping of production LLM / agent product features (not demos) | `cto` (build-vs-buy) + `ai-infra-mlops` / `ai-infra-ml-platform` / `applied-ai-engineer` for shipping craft | mod-103 (AI-native slice) + peer | **0.51 (18)** ✓ |
-| 20 | MLOps / model-lifecycle basics — evaluation, guardrails, fallbacks, monitoring, human-review paths | `ai-infra-mlops` | peer | 0.14 (5) |
-| 21 | AI safety / responsible-AI hygiene at founder scale | `ai-risk-engineer` | peer + mod-107 slice | 0.09 (3) |
-| 22 | Data privacy for AI — multi-tenant isolation, PII in prompts / logs, retention with foundation-model vendors | `cto` | mod-107 (privacy slice) + mod-103 (multi-tenancy) | 0.14 (5) |
-| 23 | Enterprise-readiness — SSO / SAML / OIDC, SCIM, audit logs, ISO 27001 / SOC 2 as GTM enabler | `cto` | mod-103 (auth build-vs-buy) + mod-107 (compliance) + peer product-gtm | 0.11 (4) |
+| # | Theme | Owner | Coverage | Frequency (n=40, 2026-10) | Δ vs 2026-09 |
+|---|---|---|---|---|---|
+| 01 | CTO role position on the ladder, stage-by-stage self-development plan | `cto` | mod-101 | **0.48 (19)** ✓§ | +0.22 |
+| 02 | Architecture under uncertainty — ADRs, C4, monolith-first, evolutionary architecture, ISO/IEC 25010 trade-offs | `cto` | mod-102 | **0.58 (23)** ✓ | +0.07 |
+| 03 | Build-vs-buy and platform choices — cloud economics, vendor selection, AI-stack decisions | `cto` | mod-103 | 0.23 (9) | — |
+| 04 | First engineering hires and team topology — hiring plan, interview loop, Team Topologies patterns | `cto` | mod-104 | **0.43 (17)** ✓ | +0.06 |
+| 05 | Technical debt as a business decision — portfolio, cost-to-carry, refactor budget, deprecation vs. StranglerFig rewrite | `cto` | mod-105 | 0.05 (2)† | — |
+| 06 | Scaling the org and the stack — 0 → 5 → 15 → 50 → 150 engineers transitions | `cto` | mod-106 | 0.18 (7) | -0.02 |
+| 07 | Founder-scope security and compliance — SOC 2 Type I, GDPR / CCPA, HIPAA baseline, OWASP ASVS, SLSA, vendor DPA / BAA | `cto` | mod-107 | 0.20 (8) | +0.03 |
+| 08 | CTO↔CEO relationship, board technical communication, technical due diligence | `cto` | mod-108 | 0.18 (7) | +0.04 |
+| 09 | Python / TypeScript / cloud fluency at technical-co-founder depth | `ai-infra-junior-engineer` / `ai-infra-engineer` | prereq | **0.60 (24)** ✓ | +0.14 |
+| 10 | Product discovery, roadmap, delivery-cadence fluency | `cpo-curriculum` | peer | **0.43 (17)** ✓ | +0.09 |
+| 11 | CEO strategy, fundraising cadence, cap-table literacy | `founder-ceo-curriculum` | peer | 0.13 (5) | +0.04 |
+| 12 | HR / people-ops / compensation / performance-management basics | `startup-operations-governance-curriculum` | peer | 0.28 (11)¶ | +0.08 |
+| 13 | Finance / runway / unit-economics basics | `startup-finance-fundraising-curriculum` | peer | 0.00 (0)‡ | — |
+| 14 | GTM / enterprise-sales-motion basics | `startup-product-gtm-curriculum` | peer | 0.15 (6) | +0.01 |
+| 15 | Delivery cadence, DORA four-key signals, blameless post-mortems | `cto` | mod-106 (slice) | 0.10 (4) | -0.01 |
+| 16 | Day-two engineering-management craft (1:1s, career ladders, performance-management) | `ai-infra-team-lead` | peer | 0.15 (6) | +0.01 |
+| 17 | Deep platform, distributed-systems, multi-region architecture beyond ~50 engineers | `ai-infra-senior-architect` / `ai-infra-principal-architect` | up | 0.08 (3) | -0.03 |
+| 18 | AI-native platform decisions — foundation-model API vs. self-host, RAG / fine-tune / tool-use, inference cost economics | `cto` | mod-103 (AI-native slice) | **0.58 (23)** ✓ | +0.01 |
+| 19 | Hands-on shipping of production LLM / agent product features (not demos) | `cto` (build-vs-buy) + `ai-infra-mlops` / `ai-infra-ml-platform` / `applied-ai-engineer` for shipping craft | mod-103 (AI-native slice) + peer | **0.53 (21)** ✓ | +0.02 |
+| 20 | MLOps / model-lifecycle basics — evaluation, guardrails, fallbacks, monitoring, human-review paths | `ai-infra-mlops` | peer | 0.23 (9) | +0.09 |
+| 21 | AI safety / responsible-AI hygiene at founder scale | `ai-risk-engineer` | peer + mod-107 slice | 0.13 (5) | +0.04 |
+| 22 | Data privacy for AI — multi-tenant isolation, PII in prompts / logs, retention with foundation-model vendors | `cto` | mod-107 (privacy slice) + mod-103 (multi-tenancy) | 0.25 (10) | +0.11 |
+| 23 | Enterprise-readiness — SSO / SAML / OIDC, SCIM, audit logs, ISO 27001 / SOC 2 as GTM enabler | `cto` | mod-103 (auth build-vs-buy) + mod-107 (compliance) + peer product-gtm | 0.10 (4) | -0.01 |
 
 ✓ = crosses the ≥0.30 net-new-content threshold — every one already has an owner (this repo or a peer track).
+§ = T01 lift partly reflects tagger-criterion drift between 2026-09 and 2026-10 (see Status section). mod-101 ownership unaffected.
 † = mod-105 retained despite low posting frequency because CTO Craft, Fournier, Larson, and Fowler all treat technical-debt framing as core CTO craft; the low frequency reflects JD blind spot, not curriculum irrelevance.
-‡ = zero verbatim hits reflects a known JD blind spot (founders/CEOs rarely name runway/unit-economics in the CTO JD even where the CTO opines on it), not curriculum irrelevance. Keep peer-linked.
+‡ = zero verbatim hits across two cycles reflects a known JD blind spot (founders/CEOs rarely name runway/unit-economics in the CTO JD even where the CTO opines on it), not curriculum irrelevance. Keep peer-linked.
+¶ = T12 (HR / people-ops basics) climbed from 0.20 to 0.28 and is now just below threshold — monitor next cycle; coverage already peer-owned.
 
-## Emerging themes (below the 0.30 threshold this cycle)
+## Emerging themes (threshold-crossing watch + below-threshold)
 
-New themes surfaced by the 2026-09 sample. All below threshold — no net-new modules proposed. All already have a home; see [`.aicg/job-requirements.json`](./.aicg/job-requirements.json) `emerging_themes_below_threshold` for full evidence.
+Second-cycle re-sampling confirmed every theme already has a home. Two themes (founder-identity, 0-to-1 shipping velocity) technically crossed the 0.30 threshold on the merged sample — both are flagged for watch under the Status section's tagging-consistency caveat and both already have explicit hooks in existing modules. See [`.aicg/job-requirements.json`](./.aicg/job-requirements.json) `emerging_themes_below_threshold` for full evidence per theme.
 
-| Theme | Frequency (n=39) | Current coverage / recommendation |
-|---|---|---|
-| **Founder identity / equal-ownership expectation** — postings explicitly reject "CTO-in-name" or "senior hire" framing and demand a genuine co-founder | 0.20 (7) | mod-101 role-charter lab already teaches the co-founder-vs-hire distinction. No new module — ensure the lab's opening frames this explicitly so learners can diagnose a JD's mode. |
-| **0-to-1 shipping velocity / MVP-in-weeks** | 0.26 (9) | mod-102 (spikes with kill criteria) and mod-106 (delivery cadence at 0-5 engineers). No new module. |
-| **AI-native engineering workflow fluency** — Claude Code, Cursor, Codex, MCP tools in daily hands-on use | 0.11 (4) | Prereq-owned by ai-infra-engineer. Track in PREREQUISITES.md; expand only if frequency lifts above 0.30 next cycle. |
-| **Cost / FinOps for GPU / inference workloads** | 0.03 (1) | Adjacent to mod-103 AI-native slice. Reference; do not expand. |
-| **Open-source strategy as moat** | 0.03 (1) | Adjacent to mod-103 and mod-108. Reference; do not expand. |
-| **Fractional CTO / CTO-as-a-service** | 0.00 (0) | Excluded on exclusion filter; separate market segment. Not covered. |
-| **CTO community-of-practice membership** (CTO Craft, CTO Connection) | N/A | Not a JD-observable requirement. Documented in references; informational. |
+| Theme | 2026-10 Frequency (n=40) | 2026-09 Frequency (n=39) | Current coverage / recommendation |
+|---|---|---|---|
+| **Founder identity / equal-ownership expectation** — postings explicitly reject "CTO-in-name" or "senior hire" framing and demand a genuine co-founder | 0.43 (17) ⚠ | 0.20 (7) | mod-101 lesson 01 (`cto-ladder-pre-seed-to-series-b.md`) + exercise-04 (`curriculum-scope-and-deferral-contract.md`) already teach the co-founder-vs-hire distinction. ⚠ Crossing is partly tagger-criterion drift (see Status). **No new module or exercise this cycle.** If this holds under consistent tagging next cycle, add a targeted mod-101 exercise that forces learners to diagnose a verbatim JD. |
+| **0-to-1 shipping velocity / MVP-in-weeks** | 0.43 (17) ⚠ | 0.26 (9) | mod-102 (spikes with kill criteria) + mod-106 lesson 01 (`01-zero-to-five-first-process.md`) + exercise-01 (`exercise-01-zero-to-five-first-process-drill.md`) already teach the discipline. ⚠ Crossing is partly tagger-criterion drift (see Status). **No new module or exercise this cycle.** If this holds under consistent tagging next cycle, add a targeted mod-106 exercise that forces learners to defend a 2-4 week MVP cadence against founder six-month pressure. |
+| **AI-native engineering workflow fluency** — Claude Code, Cursor, Codex, MCP tools in daily hands-on use | 0.15 (6) | 0.11 (4) | Prereq-owned by ai-infra-engineer. Track in PREREQUISITES.md; expand only if frequency lifts above 0.30 next cycle. |
+| **Cost / FinOps for GPU / inference workloads** | 0.05 (2) | 0.03 (1) | Adjacent to mod-103 AI-native slice. Reference; do not expand. |
+| **Open-source strategy as moat** | 0.03 (1) | 0.03 (1) | Adjacent to mod-103 and mod-108. Reference; do not expand. |
+| **Fractional CTO / CTO-as-a-service** | 0.00 (0) | 0.00 (0) | Excluded on exclusion filter; separate market segment. Not covered. |
+| **CTO community-of-practice membership** (CTO Craft, CTO Connection) | N/A | N/A | Not a JD-observable requirement. Documented in references; informational. |
 
 ## Authoritative references (grounding for canon-level material)
 
@@ -176,17 +181,17 @@ Grouped by kind. Full citations with `use` notes are in [`.aicg/job-requirements
 
 - [Eric Ries — 'The Lean Startup'](https://theleanstartup.com/)
 
-## Salary evidence (2026-09 sample, n=39)
+## Salary evidence (2026-10 cycle, n=40)
 
-Cash disclosed on 20 postings; equity disclosed on 33 postings. USD conversion applied to GBP@1.30 and EUR@1.10.
+Cash disclosed on 15 postings; equity disclosed on 34 postings. USD conversion applied to GBP@1.30 and EUR@1.10.
 
 **Deliberately not aggregated across stages** — the Co-Founder / CTO market is bimodal (pre-funded technical co-founders with founder equity and near-zero cash vs. post-Series-A CTOs with market-rate cash and smaller equity), so a single aggregate would obscure both distributions.
 
 | Stage | Cash-disclosed n | Cash range (USD) | Cash representative band | Equity notes |
 |---|---|---|---|---|
-| pre-seed | 6 | $60K–$220K spread | ~$90K–$180K USD | Bimodal — genuine co-founder equity 10-50% (15 postings) vs. senior founding-hire 0.5-1.5% (5 postings). Several offered zero-cash + full co-founder equity. |
-| seed | 12 | $80K–$260K spread | ~$150K–$225K USD | Founding-engineer / early-CTO-hire equity typically 0.10-2.00%. YC / Otta seed cluster ~0.5-1.0%; AI-native pre-Series-A seed rounds go higher (2.0-4.0%). |
-| series-a | 2 | $90K–$200K spread | **sample too small** (n=2) for a defensible aggregate; treat any published Series-A CTO cash-comp band as informational only until the next research cycle. | Founding-engineer equity at Series-A ~0.10-0.20% (n=2). |
+| pre-seed | 2 | $70K–$180K spread | **sample too small** (n=2 — most 2026-10 top-up pre-seed postings offered equity-only, not cash+equity). Treat the 2026-09 cycle's ~$90K-$180K USD pre-seed band as informational until next cycle re-samples. | Co-founder equity continues to dominate — 23 of 25 pre-seed postings disclose equity, bimodal: genuine co-founder 10-50% (17 postings) vs. senior founding-hire 0.5-1.5% (3 postings). Several explicit equity-only / cash-at-revenue-milestones offers (Malkolm, LongRun, Anise 50%). |
+| seed | 13 | $80K–$270K spread | ~$150K–$225K USD (stable vs. 2026-09) | Founding-engineer / early-CTO-hire equity typically 0.10-2.00%. YC / Otta seed cluster ~0.5-1.0%; AI-native pre-Series-A seed rounds go higher (Ochre 2.0-4.0%). |
+| series-a | 0 | N/A | **N=0 THIS CYCLE** — both 2026-09 Series-A postings aged out and no new Series-A CTO postings were sampled. Next cycle should re-prioritise Series-A sourcing. Treat the pre-existing $180K-$300K US Series-A CTO band as informational only. | No Series-A equity data in this cycle (n=0). |
 
 Full ranges (verbatim, USD) in [`.aicg/job-requirements.json`](./.aicg/job-requirements.json) `salary_evidence.per_stage_ranges`.
 
