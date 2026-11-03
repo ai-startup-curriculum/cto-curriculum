@@ -1,7 +1,7 @@
 # Co-Founder / CTO Curriculum — Role Pathway
 
 <!-- aicg:orientation:start -->
-> **Start here:** [Module 00: Your Relationship to the Model](lessons/00-your-relationship-to-the-model/README.md). Where this role sits relative to the model, what it owns, and who it works with across the five curricula.
+> **Start here:** [Module 00: Your Relationship to the Model](lessons/00-your-relationship-to-the-model/README.md). Where this role sits relative to the model, what it owns, and who it works with across the sibling curricula.
 <!-- aicg:orientation:end -->
 
 > **How do I turn technology into a scalable company capability?**
