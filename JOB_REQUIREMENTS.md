@@ -1,7 +1,7 @@
 # Job Requirements — Co-Founder / CTO
 
 <!-- aicg:site-banner -->
-> 🎓 Part of the free, open-source **AI Career Curriculum** ecosystem — [Infrastructure](https://github.com/ai-infra-curriculum) · [ML Engineering](https://github.com/ml-engineering-curriculum) · [AI Engineering](https://github.com/ai-engineering-curriculum) · [Governance](https://github.com/ai-governance-curriculum) · [Startup](https://github.com/ai-startup-curriculum). Live cohorts &amp; team programs: **[ai-infra-curriculum.github.io](https://ai-infra-curriculum.github.io/)**.
+> 🎓 Part of the free, open-source **AI Career Curriculum** ecosystem — [Infrastructure](https://github.com/ai-infra-curriculum) · [ML Engineering](https://github.com/ml-engineering-curriculum) · [AI Engineering](https://github.com/ai-engineering-curriculum) · [Governance](https://github.com/ai-governance-curriculum) · [Startup](https://github.com/ai-startup-curriculum) · [Workforce](https://github.com/ai-workforce-curriculum). Start at **[ai-curriculum-project.github.io](https://ai-curriculum-project.github.io/)**.
 <!-- /aicg:site-banner -->
 
 > Human-readable summary of [`.aicg/job-requirements.json`](./.aicg/job-requirements.json). The JSON is the source of truth; this document mirrors it in table form for reviewers, hiring managers, and learners deciding whether the curriculum fits their real role.
