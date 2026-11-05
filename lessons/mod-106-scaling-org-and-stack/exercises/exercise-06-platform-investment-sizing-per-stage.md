@@ -325,6 +325,86 @@ Sections:
   is under-cooked. Reference the DORA
   measurement plan from
   [exercise 05](exercise-05-dora-four-key-measurement-plan.md).
+- **Cite each matrix cell's tooling by product
+  page, not by vendor name alone.** The matrix
+  row's named-tooling column should carry the
+  primary-source URL so the sizing can be
+  reproduced by the next reader. Chapter 06 names
+  each vendor's URL — carry it forward into the
+  matrix row rather than re-flattening the name.
+  For the CI transition out of public runners,
+  the GitHub Actions
+  [larger-runner docs](https://docs.github.com/en/actions/using-github-hosted-runners/about-larger-runners)
+  and the [Actions pricing page](https://github.com/features/actions)
+  are the specific sub-pages the 5-15 → 15-50
+  pricing call depends on; for the 50-150
+  developer-platform row, cite
+  [backstage.io/docs](https://backstage.io/docs/)
+  rather than the product homepage — the docs
+  are what will hold the sizing to reality.
+- **The DORA bands are a calibration reference,
+  not a per-cell sizing target.** The
+  "the DORA numbers do not regress" discipline
+  in the problem statement uses the
+  [dora.dev/research](https://dora.dev/research/)
+  elite / high / medium / low cutoffs as a
+  situating tool at the annual re-read, not as a
+  numeric target in any matrix cell. Do not
+  write *"get Lead Time to elite"* into a cell
+  — name the practice the investment protects
+  (fast CI, progressive rollout, SLO
+  instrumentation, service catalogue) and let
+  the number follow. [Exercise 05 artifact 5](exercise-05-dora-four-key-measurement-plan.md)
+  is the local defence against the goal-
+  ification slip.
+- **The comp-band-derived cost line is a
+  [`mod-104` chapter 06](../../mod-104-first-engineering-hires-and-team-topology/06-org-chart-career-ladder-and-comp-band.md)
+  output, not a new number.** The *"$60k of
+  engineering time per year"* worked example
+  above assumes a specific seed / Series-A
+  engineer cost at a 1.3-1.5x fully-loaded
+  multiplier; the sources are
+  [Levels.fyi](https://www.levels.fyi/),
+  [Pave](https://www.pave.com/), and the
+  [Index Ventures Option Plan](https://www.indexventures.com/optionplan/),
+  with the multiplier being a CFO number per
+  [`mod-104` exercise 01's starter guidance](../../mod-104-first-engineering-hires-and-team-topology/exercises/exercise-01-hiring-plan-against-roadmap-and-runway.md).
+  Cite the Levels.fyi row (or the Pave / Radford
+  row, if your People lead has access) you
+  derived the engineer-cost against — a $60k
+  line item without a sourced row is an invented
+  number.
+  <!-- needs-research: a sourced primary
+  reference for the chapter-06 per-stage
+  platform-investment sizing fractions
+  ("~10% of one engineer" at 5-15; "2-4 engineer
+  platform team" at 15-50; "multi-team platform
+  investment" at 50-150). These are rule-of-
+  thumb sizings; the closest canonical readings
+  are Team Topologies
+  ([teamtopologies.com](https://teamtopologies.com/))
+  on platform-team scope and the
+  platformengineering.org community guidance,
+  neither of which pin a specific headcount at
+  these stage bands. -->
+- **Big-tech reference stacks are directional
+  blog posts, not reference architectures.**
+  When chapter 06's 15-50 anti-pattern (the
+  imported Uber / Airbnb / Netflix platform
+  stack) is invoked in the matrix or in a
+  per-category deep-dive, link the specific
+  post as a *directional* reference rather than
+  as a target. Entry points to the primary
+  publications, not aggregator recaps:
+  [Uber Engineering blog](https://www.uber.com/en-US/blog/engineering/),
+  [Airbnb Tech Blog](https://medium.com/airbnb-engineering),
+  [Netflix Tech Blog](https://netflixtechblog.com/).
+  The citation makes clear to the next reader
+  that the sizing was informed by a specific-
+  scale org's writeup, not adopted wholesale as
+  a validated architecture; the earn-its-keep
+  test is what converts that signal into a
+  local sizing call.
 
 ## Acceptance criteria
 
