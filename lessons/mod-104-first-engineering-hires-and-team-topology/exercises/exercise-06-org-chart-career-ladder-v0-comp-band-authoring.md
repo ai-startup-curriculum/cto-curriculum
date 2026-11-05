@@ -155,8 +155,9 @@ ladder v0, with:
 
 **Do not invent numbers you cannot verify.** If your
 company has not benchmarked against a paid survey yet,
-mark the affected cells `<comp: pending Pave / Radford
-benchmark; using Levels.fyi seed row as placeholder>`
+mark the affected cells `<comp: pending [Pave](https://www.pave.com/)
+/ [Radford](https://radford.aon.com/) benchmark; using
+[Levels.fyi](https://www.levels.fyi/) seed row as placeholder>`
 and cite the placeholder. Chapter 06's failure mode
 "the comp band without a geography rule" and the
 sibling failure mode "the comp band with fabricated
@@ -268,6 +269,44 @@ words:
   Ventures Option Plan
   ([indexventures.com/optionplan](https://www.indexventures.com/optionplan/))
   for the equity band.
+- **Cite the comp-band references by row, not by
+  aggregate total.** Chapter 06 names the canonical set;
+  link the specific row or post you calibrated against so
+  the next reader can reproduce the lookup:
+  - [Levels.fyi](https://www.levels.fyi/) for base and
+    equity by level and geography. The seed / Series-A
+    columns are thinner than the FAANG columns but
+    sufficient to calibrate the trajectory shape at your
+    stage.
+  - [Pave](https://www.pave.com/) and [Radford](https://radford.aon.com/)
+    for the paid-survey benchmarks a People lead would
+    normally subscribe to; cite the row you used, or
+    mark the affected cells `<comp: pending Pave /
+    Radford benchmark>` and cite the Levels.fyi
+    placeholder.
+  - [Carta State of Startup Compensation](https://carta.com/blog/)
+    posts for equity-grant bands by stage, drawn from
+    Carta's aggregated cap-table data.
+  - [Y Combinator Startup School library](https://www.startupschool.org/library)
+    for the YC founder-facing rules of thumb on
+    founding-engineer equity — a useful cross-check for
+    the early-employee end of the band.
+- **The "~6 month" calibration cadence is a rule of
+  thumb, not a sourced figure.** Chapter 06 names a
+  half-yearly re-read for the ladder because that is the
+  cadence most tech companies default to; the actual
+  right cadence for your company is a function of your
+  perf-review rhythm (if you have one yet), your
+  calibration maturity, and the rate at which headcount
+  is churning the ladder's scope anchors. Name the
+  cadence you chose in the index, and name the trigger
+  that would move it earlier.
+  <!-- needs-research: a sourced primary reference for
+  the six-month calibration cycle as an industry norm at
+  pre-Series-B scale (currently cited as a rule of
+  thumb; the closest canonical reading is Fournier's
+  *The Manager's Path* on calibration meetings, which
+  does not pin the cadence). -->
 
 ## Acceptance criteria
 

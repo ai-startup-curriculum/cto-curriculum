@@ -408,6 +408,105 @@ Plus:
   should be able to trace the loop from *"page
   fires"* to *"debt item lands in the
   portfolio"* without leaving your directory.
+- **Bundle the Google SRE book / workbook
+  chapters into one canonical reading list in
+  `docs/on-call/README.md`.** The four artifacts
+  touch five different SRE chapters —
+  [*Being On-Call*](https://sre.google/sre-book/being-on-call/),
+  [*Practical Alerting*](https://sre.google/sre-book/practical-alerting/),
+  [*Alerting on SLOs*](https://sre.google/workbook/alerting-on-slos/),
+  [*Managing Incidents*](https://sre.google/sre-book/managing-incidents/),
+  and [*Postmortem Culture*](https://sre.google/sre-book/postmortem-culture/).
+  List them once at the top of the rotation
+  README as the operational substrate's
+  canonical reading rather than scattering the
+  citations across the four artifact files. The
+  full
+  [*Site Reliability Workbook* table of contents](https://sre.google/workbook/table-of-contents/)
+  is the one place to orient from if your team
+  decides to lift more than the listed
+  chapters.
+- **The incident-command system (ICS) pattern in
+  the SRE book is borrowed from the fire-service
+  ICS, not invented by Google.** Chapter 07
+  notes this explicitly; the exercise's
+  `incident-response.md` benefits from citing
+  the upstream primary alongside
+  [*Managing Incidents*](https://sre.google/sre-book/managing-incidents/)
+  so the pattern is not read as a Google-
+  specific invention. FEMA's National Incident
+  Management System ([FEMA NIMS](https://www.fema.gov/emergency-managers/nims))
+  is the current-day keeper of the ICS
+  specification; the IS-100 training ("ICS-100 —
+  Introduction to the Incident Command System")
+  is the common entry-level reading.
+  <!-- needs-research: the canonical primary
+  source the SRE book is adapting from. The SRE
+  book's *Managing Incidents* chapter cites the
+  fire-service ICS without pinning a specific
+  FEMA / NIMS revision; confirm the specific
+  primary URL (FEMA NIMS program, IS-100
+  training, or an older US Forest Service /
+  ICS-SG original) before writing it into the
+  playbook. -->
+- **The 15-minute primary-ack default is a
+  chapter 07 convention, not a sourced
+  universal.** Artifact 2 pins the primary ack
+  window at 15 minutes, with the secondary and
+  then the EM as subsequent steps. Neither the
+  SRE book nor the public vendor playbooks
+  mandate a specific number — the window is
+  calibrated against the service's SLO burn
+  rate and the team's after-hours tolerance.
+  Name your number in `on-call/README.md` and
+  tie it to the SLO burn-rate math from
+  [*Alerting on SLOs*](https://sre.google/workbook/alerting-on-slos/)
+  rather than citing it as a universal.
+  <!-- needs-research: a sourced primary
+  reference for the 15-minute primary-ack
+  default. The chapter cites 15 minutes as a
+  rule of thumb; the common sources (the SRE
+  book's *Being On-Call* chapter, PagerDuty's
+  [response.pagerduty.com](https://response.pagerduty.com/)
+  playbook) do not pin a specific number. -->
+- **Position the three post-mortem references by
+  depth so the template-authoring step does not
+  scatter searches.** The exercise cites three
+  canonical references for the blameless
+  template — Allspaw's Etsy post
+  ([www.etsy.com/codeascraft/blameless-postmortems](https://www.etsy.com/codeascraft/blameless-postmortems)),
+  the Google SRE book chapter on post-mortem
+  culture
+  ([sre.google/sre-book/postmortem-culture](https://sre.google/sre-book/postmortem-culture/)),
+  and Sidney Dekker's *The Field Guide to
+  Understanding 'Human Error'*
+  ([sidneydekker.com/books](https://sidneydekker.com/books/)).
+  These are not interchangeable: Allspaw is the
+  short-read that establishes the just-culture
+  framing; the SRE-book chapter is the
+  operational discipline (template, action-item
+  tracking, publication discipline); Dekker is
+  the book-length deep read on why single-cause
+  narratives mislead. Read in that order so the
+  template-authoring step does not copy the
+  template without the framing that makes the
+  template work.
+- **Link `dora.dev/research` as the external
+  anchor for the weekly cadence-metrics
+  reading.** Artifact 1 ties the four DORA
+  numbers to the weekly rhythm. The external
+  anchor for that discipline — the one the
+  reader of your cadence spec will want to see
+  — is the DORA research program at
+  [dora.dev/research](https://dora.dev/research/),
+  the home of the annual *Accelerate State of
+  DevOps* report and the elite / high / medium /
+  low performance cutoffs. Cite it next to the
+  pointer to
+  [exercise 05](exercise-05-dora-four-key-measurement-plan.md)
+  in `planning/cadence.md` so the external
+  primary is one click away from the cadence
+  spec.
 
 ## Acceptance criteria
 

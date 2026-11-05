@@ -112,8 +112,9 @@ at every monthly board update.
   do not know your current burn, write `<burn: CFO to
   confirm; using $X placeholder>`; do not guess. If
   you do not know the current comp band from a public
-  reference, write `<comp: Levels.fyi / Pave lookup
-  pending>` and use a placeholder.
+  reference, write `<comp: [Levels.fyi](https://www.levels.fyi/)
+  / [Pave](https://www.pave.com/) lookup pending>` and
+  use a placeholder.
 - **Anchor each hire to the roadmap.** The trigger
   column should reference a specific roadmap item
   (customer commitment, compliance milestone, scale
@@ -145,6 +146,47 @@ at every monthly board update.
   and the [`mod-103` exercise 01 matrix](../../mod-103-build-vs-buy-and-platform-economics/exercises/exercise-01-build-vs-buy-matrix-for-five-real-choices.md).
   If either is authored, use it as the source for
   which "build" rows have hiring consequences.
+- **Cite the public references in the `Comp band source`
+  column.** Chapter 01 names the canonical set; use the
+  ones you have access to and cite the URL so the next
+  reader can reproduce the lookup:
+  - [Levels.fyi](https://www.levels.fyi/) for base +
+    equity by level and geography. The seed / Series-A
+    columns are thinner than the FAANG columns but
+    sufficient to calibrate the trajectory shape.
+  - [Index Ventures Option Plan](https://www.indexventures.com/optionplan/)
+    for founding-engineer and early-employee equity
+    ranges by stage; the canonical founder-facing public
+    reference for the equity side of the band.
+  - [Carta State of Startup Compensation](https://carta.com/blog/)
+    posts for equity-grant band by stage, drawn from
+    Carta's aggregated cap-table data.
+  - [Y Combinator Startup School library](https://www.startupschool.org/library)
+    for the YC founder-facing rules of thumb on
+    founding-engineer equity.
+  - [Pave](https://www.pave.com/) if your People lead
+    subscribes to the paid benchmark; otherwise note
+    `<comp: pending Pave / Radford benchmark>` in the
+    affected rows and cite the Levels.fyi row you used
+    as the placeholder.
+- **The fully-loaded multiplier is a CFO number, not a
+  CTO guess.** Chapter 01's 1.3-1.5x rule of thumb is a
+  calibration band, not a sourced figure for your
+  jurisdiction; your CFO or fractional-CFO computes the
+  actual multiplier against your real benefits plan,
+  payroll-tax jurisdiction, and recruiting-cost
+  assumption. Note the multiplier you used *and* whether
+  it is the placeholder or the CFO-confirmed number.
+  <!-- needs-research: a sourced public reference for
+  the 1.3-1.5x fully-loaded multiplier range at US seed
+  / Series-A stage (currently cited as a rule of thumb
+  without a primary source). -->
+- **Equity is a dilution budget, not a cash cost.** The
+  `Fully-loaded cost / year` column is cash; the equity
+  grant is tracked separately per the chapter's
+  distinction. Do not fold the equity grant's dollar-
+  value snapshot into the burn arithmetic — it hides
+  the cash picture the board is actually pressing on.
 
 ## Acceptance criteria
 

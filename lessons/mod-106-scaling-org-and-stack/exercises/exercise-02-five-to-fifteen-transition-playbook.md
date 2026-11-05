@@ -79,8 +79,14 @@ One page. Sections:
   lead responsibilities vs. IC work? Fournier's
   *The Manager's Path*
   ([oreilly.com](https://www.oreilly.com/library/view/the-managers-path/9781491973882/))
-  argues 20-50% for the tech-lead role; name your
-  target and defend it.
+  discusses the tech-lead role at length; a 20-50%
+  non-IC band is the rule of thumb most commonly
+  cited. Name your target and defend it.
+  <!-- needs-research: a sourced primary reference
+  for the 20-50% tech-lead non-IC time band
+  (currently cited as a rule of thumb; Fournier's
+  book discusses the role but does not pin a
+  specific percentage). -->
 
 ### Artifact 2 — On-call rotation v1
 
@@ -261,6 +267,45 @@ incident, named `YYYY-MM-DD-short-slug.md`).
   cross-slice work. If the six do not cross-
   reference, they are six documents rather than one
   playbook.
+- **Cite the on-call vendor by product page, not by
+  category.** The four vendors named in artifact 2's
+  page-path live at [PagerDuty](https://www.pagerduty.com/),
+  [Opsgenie](https://www.atlassian.com/software/opsgenie),
+  [incident.io](https://incident.io/), and
+  [Grafana OnCall](https://grafana.com/products/oncall/).
+  Whichever you pick, link the product page in the
+  artifact so the next reader can reproduce the
+  pricing-tier and feature-matrix lookup without
+  re-searching. The SRE book's
+  [*Being On-Call*](https://sre.google/sre-book/being-on-call/)
+  chapter is the operational framing the vendor
+  choice should sit under.
+- **Read the RFC-process references' primary entry
+  points, not aggregator writeups.** Rust's RFC
+  process is defined by the
+  [repo README](https://github.com/rust-lang/rfcs#when-you-need-to-follow-this-process);
+  Oxide's RFD process is defined by
+  [RFD 1 itself](https://rfd.shared.oxide.computer/rfd/0001)
+  and the
+  [public blog introduction](https://oxide.computer/blog/rfd-1-requests-for-discussion).
+  The status-transition vocabulary (Draft / Under
+  review / Accepted / Rejected / Withdrawn) comes
+  from Python's PEP tradition at
+  [peps.python.org](https://peps.python.org/); cite
+  the primary source rather than a secondary
+  summary.
+- **The blameless post-mortem template's anchor is
+  a sourced *just culture* framing.** The lineage
+  is Sidney Dekker's
+  [*Field Guide to Understanding 'Human Error'*](https://sidneydekker.com/books/),
+  carried into engineering practice by Allspaw's
+  [Etsy essay](https://www.etsy.com/codeascraft/blameless-postmortems/),
+  translated operationally by the Google SRE Book's
+  [Postmortem Culture chapter](https://sre.google/sre-book/postmortem-culture/).
+  Cite at least one in the template itself; a
+  template with no citation reads as *"we invented
+  this discipline"* and reviewers push back on the
+  attribution.
 
 ## Acceptance criteria
 
