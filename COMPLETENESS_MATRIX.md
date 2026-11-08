@@ -2,7 +2,7 @@
 
 AI Startup Curriculum · Level 25 · [learning](https://github.com/ai-startup-curriculum/cto-curriculum)
 
-_Generated 2026-11-03 by `aicg org completeness`._
+_Generated 2026-11-08 by `aicg org completeness`._
 
 **Overall: 100%**
 
@@ -17,9 +17,9 @@ _Generated 2026-11-03 by `aicg org completeness`._
 | `mod-101-cto-role-and-ownership-map` | ✅ Complete | 12,824 | 5 | 4 | — |
 | `mod-102-architecture-under-uncertainty` | ✅ Complete | 21,768 | 6 | 6 | — |
 | `mod-103-build-vs-buy-and-platform-economics` | ✅ Complete | 26,967 | 6 | 5 | — |
-| `mod-104-first-engineering-hires-and-team-topology` | ✅ Complete | 27,818 | 6 | 6 | — |
+| `mod-104-first-engineering-hires-and-team-topology` | ✅ Complete | 28,394 | 6 | 6 | — |
 | `mod-105-technical-debt-as-business-decision` | ✅ Complete | 24,145 | 6 | 5 | — |
-| `mod-106-scaling-org-and-stack` | ✅ Complete | 36,272 | 7 | 7 | — |
+| `mod-106-scaling-org-and-stack` | ✅ Complete | 37,533 | 7 | 7 | — |
 | `mod-107-founder-scope-security-and-compliance` | ✅ Complete | 35,308 | 8 | 7 | — |
 | `mod-108-cto-ceo-and-board-communication` | ✅ Complete | 31,935 | 7 | 6 | — |
 
