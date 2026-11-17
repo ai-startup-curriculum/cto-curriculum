@@ -318,8 +318,8 @@ The inventory is complete when:
 - **Board pre-reads** — the one-page portfolio
   summary is a monthly board pre-read section
   (see [`mod-108` chapter 04](../../mod-108-cto-ceo-and-board-communication/README.md)).
-- **Technical-due-diligence** — the full inventory
-  + decision log is the artifact a Series-B lead
+- **Technical-due-diligence** — the full inventory +
+  decision log is the artifact a Series-B lead
   investor's DD reviewer reads first when asking
   about engineering health (see the a16z tech-DD
   checklist at
