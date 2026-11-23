@@ -72,6 +72,25 @@ One page. Sections:
   `deferral-list.md` and at the higher-altitude
   tracks (`ai-infra-senior-architect`,
   `ai-infra-principal-architect`).
+- **Canonical reading list.** The six load-bearing
+  references the four per-category deep-dives
+  rest on — *Continuous Delivery*
+  ([continuousdelivery.com](https://continuousdelivery.com/))
+  and Nygard's *Release It!*
+  ([pragprog.com/titles/mnee2/release-it-second-edition](https://pragprog.com/titles/mnee2/release-it-second-edition/))
+  for test and deploy discipline; the Google SRE
+  book chapters on
+  [*Practical Alerting*](https://sre.google/sre-book/practical-alerting/)
+  and
+  [*Service Level Objectives*](https://sre.google/sre-book/service-level-objectives/)
+  for observability discipline; Team Topologies
+  ([teamtopologies.com](https://teamtopologies.com/))
+  and
+  [platformengineering.org](https://platformengineering.org/)
+  for developer-platform discipline. Listed once
+  here (mirroring chapter 06's own load-bearing-
+  references section) rather than re-cited in
+  each per-category deep-dive.
 
 ### Artifact 1 — The 4x4 sizing matrix
 
