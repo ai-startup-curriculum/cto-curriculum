@@ -104,8 +104,8 @@ and {0-5, 5-15, 15-50, 50-150}:
   ~10% of one engineer / 2-4 engineer platform team
   / multi-team platform investment. Concrete.
 - **Named tooling / vendor at this stage.** GitHub
-  Actions public runners at 0-5; Grafana + Prometheus
-  + OpenTelemetry at 15-50; Backstage at 50-150;
+  Actions public runners at 0-5; Grafana +
+  Prometheus + OpenTelemetry at 15-50; Backstage at 50-150;
   etc. Cite the primary source per row (see the
   chapter-06 links).
 - **Expected DORA impact.** Which of the four keys
