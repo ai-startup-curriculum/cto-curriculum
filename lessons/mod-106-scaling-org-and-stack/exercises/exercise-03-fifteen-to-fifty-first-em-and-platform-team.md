@@ -153,8 +153,8 @@ Sections:
   quarter, for the next four quarters. Reference
   the hiring plan from
   [`mod-104` chapter 01](../../mod-104-first-engineering-hires-and-team-topology/01-hiring-plan-against-roadmap-and-runway.md).
-- **Compensation plan.** Salary + equity + benefits
-  + on-call stipend, broken down by comp band.
+- **Compensation plan.** Salary + equity +
+  benefits + on-call stipend, broken down by comp band.
   Reference the comp band from
   [`mod-104` chapter 06](../../mod-104-first-engineering-hires-and-team-topology/06-org-chart-career-ladder-and-comp-band.md).
 - **Non-headcount spend.** Categories: cloud

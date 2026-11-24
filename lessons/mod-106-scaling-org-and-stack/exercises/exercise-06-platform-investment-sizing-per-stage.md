@@ -72,6 +72,25 @@ One page. Sections:
   `deferral-list.md` and at the higher-altitude
   tracks (`ai-infra-senior-architect`,
   `ai-infra-principal-architect`).
+- **Canonical reading list.** The six load-bearing
+  references the four per-category deep-dives
+  rest on — *Continuous Delivery*
+  ([continuousdelivery.com](https://continuousdelivery.com/))
+  and Nygard's *Release It!*
+  ([pragprog.com/titles/mnee2/release-it-second-edition](https://pragprog.com/titles/mnee2/release-it-second-edition/))
+  for test and deploy discipline; the Google SRE
+  book chapters on
+  [*Practical Alerting*](https://sre.google/sre-book/practical-alerting/)
+  and
+  [*Service Level Objectives*](https://sre.google/sre-book/service-level-objectives/)
+  for observability discipline; Team Topologies
+  ([teamtopologies.com](https://teamtopologies.com/))
+  and
+  [platformengineering.org](https://platformengineering.org/)
+  for developer-platform discipline. Listed once
+  here (mirroring chapter 06's own load-bearing-
+  references section) rather than re-cited in
+  each per-category deep-dive.
 
 ### Artifact 1 — The 4x4 sizing matrix
 
@@ -85,8 +104,8 @@ and {0-5, 5-15, 15-50, 50-150}:
   ~10% of one engineer / 2-4 engineer platform team
   / multi-team platform investment. Concrete.
 - **Named tooling / vendor at this stage.** GitHub
-  Actions public runners at 0-5; Grafana + Prometheus
-  + OpenTelemetry at 15-50; Backstage at 50-150;
+  Actions public runners at 0-5; Grafana +
+  Prometheus + OpenTelemetry at 15-50; Backstage at 50-150;
   etc. Cite the primary source per row (see the
   chapter-06 links).
 - **Expected DORA impact.** Which of the four keys
