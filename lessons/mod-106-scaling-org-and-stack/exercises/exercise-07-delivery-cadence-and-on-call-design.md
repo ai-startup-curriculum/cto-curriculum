@@ -160,6 +160,16 @@ Reference the earlier files explicitly.
 - **Handoff.** 15 minutes on Friday, using the
   `handoff-template.md`.
 - **Comp.** Pointer to `on-call/comp.md`.
+- **Canonical reading list.** The five Google SRE
+  book / workbook chapters the four artifacts
+  rest on — [*Being On-Call*](https://sre.google/sre-book/being-on-call/),
+  [*Practical Alerting*](https://sre.google/sre-book/practical-alerting/),
+  [*Alerting on SLOs*](https://sre.google/workbook/alerting-on-slos/),
+  [*Managing Incidents*](https://sre.google/sre-book/managing-incidents/),
+  and [*Postmortem Culture*](https://sre.google/sre-book/postmortem-culture/)
+  — listed once here rather than scattered
+  across the four artifacts (see the starter-
+  guidance bullet on bundling the SRE reading).
 
 `on-call/page-path.md` — the operational path:
 
